@@ -1,58 +1,78 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  # 🍽️ Restaurant Food Ordering System
 
-## About Laravel
+  **Sistem Pemesanan Makanan Restoran Berbasis Web Menggunakan Framework Laravel**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+  [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+  [![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📌 Tentang Proyek
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Aplikasi **Sistem Pemesanan Makanan Restoran** dirancang untuk mempermudah proses pemesanan makanan secara mandiri oleh pelanggan di meja restoran. Pelanggan dapat melihat katalog menu, memfilter kategori, dan langsung melakukan pemesanan tanpa perlu menunggu pelayan. 
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Setiap pesanan yang terkirim akan diproses oleh *backend* Laravel dan langsung memunculkan notifikasi (*Flash Message*) secara instan.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+---
 
-## Agentic Development
+## ✨ Fitur Utama
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### 👨‍🍳 Sisi Pelanggan (Customer Page)
+* **Katalog Menu Interaktif**: Menampilkan daftar makanan, minuman, dan cemilan beserta gambar, deskripsi, dan harga.
+* **Filter Kategori Instant**: Memfilter daftar menu berdasarkan kategori (Makanan, Minuman, Cemilan) menggunakan JavaScript tanpa perlu *reload* halaman.
+* **Pemesanan Ringkas**: Pelanggan hanya perlu menginput **Nama Lengkap** dan **Nomor Meja**, serta menentukan porsi item.
+* **Notifikasi Instan**: Menampilkan *Flash Message* (`Success` / `Error`) secara langsung setelah tombol **Pesan Sekarang** diklik.
 
-```bash
-composer require laravel/boost --dev
+### 🛡️ Sisi Admin (Admin Panel)
+* **Dashboard Monitoring**: Melihat daftar transaksi pesanan masuk secara *real-time*.
+* **Manajemen Menu (CRUD)**: Menambah, mengubah, atau menghapus menu makanan beserta gambar hidangan.
 
-php artisan boost:install
-```
+---
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## 📸 Tampilan Antarmuka (Screenshots)
 
-## Contributing
+| Halaman Menu Utama | Notifikasi Pesanan Berhasil |
+| :---: | :---: |
+| ![Preview Menu](https://via.placeholder.com/600x350.png?text=Preview+Menu+Restoran) | ![Preview Flash Message](https://via.placeholder.com/600x350.png?text=Preview+Flash+Message) |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+> *Ganti URL gambar di atas dengan screenshot asli aplikasi kamu jika sudah di-upload ke GitHub.*
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Teknologi & Tools
 
-## Security Vulnerabilities
+* **Framework**: [Laravel](https://laravel.com) (v10 / v11)
+* **Language**: PHP >= 8.1
+* **Database**: MySQL / MariaDB
+* **Frontend**: Blade Templating, [Tailwind CSS](https://tailwindcss.com), JavaScript (Vanilla)
+* **Icons & Styling**: Tailwind CDN
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 📂 Struktur Direktori Utama Proyek
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```text
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       └── CustomerController.php   # Controller proses menu & checkout
+│   └── Models/
+│       ├── Food.php                      # Model data menu
+│       ├── Order.php                     # Model data pesanan
+│       └── OrderItem.php                 # Model rincian item pesanan
+├── database/
+│   └── migrations/                        # Skema tabel database
+├── resources/
+│   └── views/
+│       └── menu.blade.php                 # Tampilan UI utama pelanggan
+└── routes/
+    └── web.php                            # Routing endpoint aplikasi
+
+
